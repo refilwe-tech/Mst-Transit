@@ -1,5 +1,5 @@
 import { Button } from "../..";
-import { DeliveryBike, DeliveryMan } from "../../../assets";
+import { DeliveryMan } from "../../../assets";
 import { CONTACTS } from "../../../contants";
 
 export const Home = () => {
@@ -29,7 +29,7 @@ export const Home = () => {
           </Button>
         </section>
         <section className="w-1/2">
-          <img src={DeliveryBike} alt="placeholder" />
+          <img src={DeliveryMan} alt="placeholder" />
         </section>
       </section>
       <section
