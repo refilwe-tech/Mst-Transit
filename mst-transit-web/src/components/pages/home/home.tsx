@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Button, Heading } from "../..";
+import { Button, Heading, PartnersCarousel } from "../..";
 import { DeliveryMan } from "../../../assets";
 import { CONTACTS } from "../../../contants";
 import { useLocation } from "react-router-dom";
@@ -14,7 +14,7 @@ export const Home = () => {
   }, [hash]);
 
   return (
-    <section className="h-full w-full">
+    <section className="h-full w-full flex flex-col gap-6">
       <section className="w-full h-4/5 flex items-center py-6">
         <section className="w-1/2">
           <h1 className="text-5xl">
@@ -42,10 +42,6 @@ export const Home = () => {
           <img src={DeliveryMan} alt="placeholder" />
         </section>
       </section>
-      <section
-        id="businesses"
-        className="w-full h-1/5 flex items-center py-6"
-      ></section>
       <section id="services" className="bg-secondary/10">
         <Heading heading="Our services" heading2="Helping ease your life" />
         <section className="flex gap-2 items-center">
@@ -86,9 +82,11 @@ export const Home = () => {
           </section>
         </section>
       </section>
-
-      <section id="businesses">
+      <section id="businesses" className="">
         <Heading heading="Meet the businesses" heading2="We are working with" />
+        <section>
+          <PartnersCarousel />
+        </section>
       </section>
     </section>
   );
