@@ -21,7 +21,8 @@ export const Button: FC<ButtonProps> = ({
       btnStyle += " bg-secondary text-white";
       break;
     case "gradient":
-      btnStyle += " bg-gradient-to-r from-primary to-secondary text-white";
+      btnStyle +=
+        " bg-gradient-to-r from-primary to-secondary hover:from-secondary hover:to-primary text-white";
       break;
     case "circle":
       btnStyle += " bg-secondary text-white rounded-full p-2";
