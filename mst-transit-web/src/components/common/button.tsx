@@ -9,16 +9,16 @@ export const Button: FC<ButtonProps> = ({
   variant = "outline",
   ...rest
 }) => {
-  let btnStyle = "text-black rounded-md px-4 py-2 font-semibold";
+  let btnStyle = "text-black  px-4 py-2 font-semibold";
 
   switch (variant) {
     case "outline":
-      btnStyle += " border-2 border-secondary";
+      btnStyle += " border-2 border-secondary rounded-md";
       break;
     case "clear":
       break;
     case "solid":
-      btnStyle += " bg-secondary text-white";
+      btnStyle += " bg-secondary text-white rounded-md";
       break;
     case "gradient":
       btnStyle +=

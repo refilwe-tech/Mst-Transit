@@ -84,8 +84,30 @@ export const Home = () => {
       </section>
       <section id="businesses" className="">
         <Heading heading="Meet the businesses" heading2="We are working with" />
-        <section>
+        <section className="flex flex-col gap-4">
           <PartnersCarousel />
+          <section className="flex flex-col justify-center items-center">
+            <>
+              <h1 className="text-3xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                Partner with us
+              </h1>
+              <p className="text-lg text-center">
+                We are always looking for new businesses to partner with. If you
+                are interested in partnering with us, please add your business
+                details. So that we can connect our customers with your
+                business.
+              </p>
+            </>
+            <section className="flex gap-2 items-center">
+              <Button
+                onClick={() => window.open(CONTACTS.whatsapp, "_blank")}
+                variant="circle"
+              >
+                +
+              </Button>
+              <p className="text-xl font-semibold">Add your business</p>
+            </section>
+          </section>
         </section>
       </section>
     </section>

@@ -19,14 +19,7 @@ export const PartnersCarousel: FC = () => {
     { original: MegaBus },
   ];
   return (
-    <Carousel
-      autoSwipe={1000}
-      swiping
-      className="bg-primary/5 px-10 py-5 rounded-lg"
-      slide={2}
-      show={6}
-      transition={0.5}
-    >
+    <Carousel autoSwipe={1000} swiping slide={2} show={6} transition={0.5}>
       {images.map((image, index) => (
         <img
           key={index}
