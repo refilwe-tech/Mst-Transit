@@ -42,36 +42,30 @@ export const Home = () => {
           <img src={DeliveryMan} alt="placeholder" />
         </section>
       </section>
-      <section id="services" className="bg-secondary/10">
-        <Heading heading="Our services" heading2="Helping ease your life" />
-        <section className="flex gap-2 items-center">
-          <section className="border border-primary/90 rounded-lg p-5 flex flex-col gap-4">
-            <Card
-              title="Embalenhle"
-              location="Embalenhle"
-              parcels="35"
-              tickets="25"
-              groceries="100"
-            />
-          </section>
-          <section className="border border-primary/90 rounded-lg p-5 flex flex-col gap-4">
-            <Card
-              title="Secunda / Evander"
-              location="Secunda / Evander"
-              parcels="70"
-              tickets="0"
-              groceries="150"
-            />
-          </section>
-          <section className="border border-primary/90 rounded-lg p-5 flex flex-col gap-4">
-            <Card
-              title="Osizweni / Brendan Village / New Estate"
-              location="Embalenhle"
-              parcels="60"
-              tickets="0"
-              groceries="0"
-            />
-          </section>
+      <section id="services" className="">
+        <Heading heading="Our services" heading2="Parcel & Food Delivery" />
+        <section className="grid grid-cols-3 gap-6 py-10 items-center">
+          <Card
+            number="#1"
+            title="Embalenhle"
+            parcels="35"
+            tickets="25"
+            groceries="100"
+          />
+          <Card
+            number="#2"
+            title="Secunda / Evander"
+            parcels="70"
+            tickets="0"
+            groceries="150"
+          />
+          <Card
+            number="#3"
+            title="Osizweni / Brendan Village / New Estate"
+            parcels="60"
+            tickets="0"
+            groceries="0"
+          />
         </section>
       </section>
       <section id="businesses" className="">
