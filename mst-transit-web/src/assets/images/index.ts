@@ -5,3 +5,4 @@ export { default as MegaBus } from "./megabus.png";
 export { default as KFC } from "./kfc.png";
 export { default as ChickenLicken } from "./chicken-licken.png";
 export { default as KotaKhona } from "./kota-khona.png";
+export { default as Galitos } from "./Galitos.png";

@@ -1,6 +1,6 @@
 import { Carousel } from "@trendyol-js/react-carousel";
 import { FC } from "react";
-import { ChickenLicken, KFC, KotaKhona, MegaBus } from "../../assets";
+import { ChickenLicken, Galitos, KFC, KotaKhona, MegaBus } from "../../assets";
 
 export const PartnersCarousel: FC = () => {
   const images = [
@@ -9,7 +9,7 @@ export const PartnersCarousel: FC = () => {
     { original: ChickenLicken },
     { original: KotaKhona },
     { original: MegaBus },
-    { original: KFC },
+    { original: Galitos },
     { original: ChickenLicken },
     { original: KotaKhona },
     { original: MegaBus },
