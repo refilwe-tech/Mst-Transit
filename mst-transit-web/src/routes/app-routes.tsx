@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Home, AppLayout, AuthLayout } from "../components";
+import { Home, AppLayout, AuthLayout, Partners } from "../components";
 
 export const AppRoutes = () => {
   return (
@@ -8,6 +8,10 @@ export const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<AppLayout children={<Home />} />}>
           <Route path="home" element={<AppLayout children={<Home />} />} />
+          <Route
+            path="partner"
+            element={<AppLayout children={<Partners />} />}
+          />
         </Route>
         <Route path="/auth" element={<AuthLayout />} />
       </Routes>

@@ -20,7 +20,7 @@ export const Card: FC<CardProps> = ({
   color,
 }) => {
   return (
-    <section className="flex flex-col gap-3 h-96 bg-white drop-shadow-lg rounded-xl">
+    <section className="flex flex-col -z-10 gap-3 h-96 bg-white drop-shadow-lg rounded-xl">
       <h1
         className={`font-extrabold flex gap-2 items-center ${color} rounded-t-xl p-6`}
       >
