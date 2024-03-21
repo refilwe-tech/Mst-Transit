@@ -42,19 +42,20 @@ export const Home = () => {
           <img src={DeliveryMan} alt="placeholder" />
         </section>
       </section>
-      <section id="services" className="">
+      <section id="services" className="w-full">
         <Heading heading="Our services" heading2="Parcel & Food Delivery" />
-        <section className="grid grid-cols-3 gap-6 py-10 items-center">
+        <section className="grid md:grid-cols-3 gap-6 py-10 items-center w-full">
           <Card
-            color={"bg-tertiary"}
+            color="tertiary"
             number="#1"
             title="Embalenhle"
             parcels="35"
             tickets="25"
             groceries="100"
+            afterHours
           />
           <Card
-            color="bg-quaternary"
+            color="quaternary"
             number="#2"
             title="Secunda / Evander"
             parcels="70"
@@ -62,7 +63,7 @@ export const Home = () => {
             groceries="150"
           />
           <Card
-            color="bg-tertiaryDark"
+            color="tertiaryDark"
             number="#3"
             title="Osizweni / Brendan Village / New Estate"
             parcels="60"

@@ -7,7 +7,7 @@ export const Nav = () => {
   const { pathname, hash } = useLocation();
 
   const active = (path: string) => {
-    return hash === path || !hash || pathname === path
+    return hash === path || pathname === path
       ? "text-secondary font-semibold"
       : "hover:text-secondary";
   };

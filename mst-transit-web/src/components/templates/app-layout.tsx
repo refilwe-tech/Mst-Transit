@@ -5,7 +5,7 @@ export const AppLayout: FC<PropsWithChildren> = ({ children }) => {
   return (
     <main className="flex flex-col">
       <Nav />
-      <section className="px-16">{children}</section>
+      <section className="px-2 lg:px-16 w-full">{children}</section>
     </main>
   );
 };

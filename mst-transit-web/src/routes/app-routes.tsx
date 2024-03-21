@@ -8,11 +8,8 @@ export const AppRoutes = () => {
       <Routes>
         <Route path="/" element={<AppLayout children={<Home />} />}>
           <Route path="home" element={<AppLayout children={<Home />} />} />
-          <Route
-            path="partner"
-            element={<AppLayout children={<Partners />} />}
-          />
         </Route>
+        <Route path="partner" element={<AppLayout children={<Partners />} />} />
         <Route path="/auth" element={<AuthLayout />} />
       </Routes>
     </BrowserRouter>
