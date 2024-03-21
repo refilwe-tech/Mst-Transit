@@ -12,7 +12,7 @@ export const Nav = () => {
       : "hover:text-secondary";
   };
   return (
-    <nav className="bg-white flex items-center justify-between p-3 drop-shadow-md fixed w-full">
+    <nav className="bg-white hidden md:flex items-center justify-between p-3 drop-shadow-md fixed w-full z-10">
       <Link to="/">
         <img src={LogoIcon} className="w-20 hidden md:flex" alt="logo" />
       </Link>

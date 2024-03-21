@@ -4,7 +4,6 @@ import { CONTACTS } from "../../contants";
 import { FaCheckCircle } from "react-icons/fa";
 import { WiDayLightWind } from "react-icons/wi";
 import { IoCloudyNightOutline } from "react-icons/io5";
-import { ImRadioUnchecked } from "react-icons/im";
 interface CardProps {
   title: string;
   number: string;
@@ -25,7 +24,7 @@ export const Card: FC<CardProps> = ({
   afterHours = false,
 }) => {
   return (
-    <section className="flex flex-col -z-10 gap-3 w-full lg:h-96 bg-white drop-shadow-lg rounded-xl hover:translate-y-3">
+    <section className="flex flex-col gap-3 w-full lg:h-96 bg-white drop-shadow-lg rounded-xl hover:translate-y-2 hover:ease-in-out">
       <h1
         className={`font-extrabold text-white justify-center flex gap-2 items-center bg-${color} rounded-t-xl p-6`}
       >

@@ -17,7 +17,7 @@ export const Home = () => {
     <section className="h-full w-full flex flex-col gap-6">
       <section id="about-us" className="w-full h-4/5 flex items-center py-6">
         <section className="w-1/2">
-          <h1 className="text-5xl">
+          <h1 className="md:text-5xl">
             Let us{" "}
             <em className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-pink-600">
               handle
