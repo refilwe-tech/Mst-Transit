@@ -15,7 +15,7 @@ export const Home = () => {
 
   return (
     <section className="h-full w-full flex flex-col gap-6">
-      <section className="w-full h-4/5 flex items-center py-6">
+      <section id="about-us" className="w-full h-4/5 flex items-center py-6">
         <section className="w-1/2">
           <h1 className="text-5xl">
             Let us{" "}
@@ -46,6 +46,7 @@ export const Home = () => {
         <Heading heading="Our services" heading2="Parcel & Food Delivery" />
         <section className="grid grid-cols-3 gap-6 py-10 items-center">
           <Card
+            color={"bg-tertiary"}
             number="#1"
             title="Embalenhle"
             parcels="35"
@@ -53,6 +54,7 @@ export const Home = () => {
             groceries="100"
           />
           <Card
+            color="bg-quaternary"
             number="#2"
             title="Secunda / Evander"
             parcels="70"
@@ -60,6 +62,7 @@ export const Home = () => {
             groceries="150"
           />
           <Card
+            color="bg-tertiaryDark"
             number="#3"
             title="Osizweni / Brendan Village / New Estate"
             parcels="60"

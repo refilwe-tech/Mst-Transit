@@ -1,4 +1,6 @@
 import { FC } from "react";
+import { Button } from ".";
+import { CONTACTS } from "../../contants";
 
 interface CardProps {
   title: string;
@@ -6,6 +8,7 @@ interface CardProps {
   parcels?: string;
   tickets?: string;
   groceries?: string;
+  color: string;
 }
 
 export const Card: FC<CardProps> = ({
@@ -14,10 +17,13 @@ export const Card: FC<CardProps> = ({
   parcels,
   tickets,
   groceries,
+  color,
 }) => {
   return (
-    <section className="flex flex-col gap-3 h-full  border border-primary/90 rounded-lg p-5">
-      <h1 className="font-extrabold flex gap-2 items-center">
+    <section className="flex flex-col gap-3 h-96 bg-white drop-shadow-lg rounded-xl">
+      <h1
+        className={`font-extrabold flex gap-2 items-center ${color} rounded-t-xl p-6`}
+      >
         <p className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
           {number}
         </p>
@@ -42,6 +48,15 @@ export const Card: FC<CardProps> = ({
           </li>
         )}
       </ul>
+      <section className="flex justify-center py-4">
+        <Button
+          onClick={() => window.open(CONTACTS.whatsapp, "_blank")}
+          variant="solid"
+          className=""
+        >
+          Request Service
+        </Button>
+      </section>
     </section>
   );
 };

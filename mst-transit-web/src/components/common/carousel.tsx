@@ -1,25 +1,35 @@
 import { Carousel } from "@trendyol-js/react-carousel";
 import { FC } from "react";
-import { ChickenLicken, Galitos, KFC, KotaKhona, MegaBus } from "../../assets";
+import {
+  ChickenLicken,
+  EmbaMall,
+  Galitos,
+  KFC,
+  KotaKhona,
+  MegaBus,
+} from "../../assets";
 
 export const PartnersCarousel: FC = () => {
   const images = [
     { original: MegaBus },
+    { original: EmbaMall },
     { original: KFC },
     { original: ChickenLicken },
     { original: KotaKhona },
-    { original: MegaBus },
     { original: Galitos },
-    { original: ChickenLicken },
-    { original: KotaKhona },
-    { original: MegaBus },
     { original: KFC },
     { original: ChickenLicken },
     { original: KotaKhona },
-    { original: MegaBus },
   ];
   return (
-    <Carousel autoSwipe={1000} swiping slide={2} show={6} transition={0.5}>
+    <Carousel
+      autoSwipe={2000}
+      infinite
+      swiping
+      slide={2}
+      show={5}
+      transition={0.5}
+    >
       {images.map((image, index) => (
         <img
           key={index}
