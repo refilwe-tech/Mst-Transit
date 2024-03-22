@@ -4,6 +4,7 @@ import { CONTACTS } from "../../contants";
 import { FaCheckCircle } from "react-icons/fa";
 import { WiDayLightWind } from "react-icons/wi";
 import { IoCloudyNightOutline } from "react-icons/io5";
+
 interface CardProps {
   title: string;
   number: string;
