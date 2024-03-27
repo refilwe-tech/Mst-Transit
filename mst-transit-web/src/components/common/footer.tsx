@@ -21,7 +21,7 @@ export const Footer = () => {
   const isActive = (path: string) => hash === path || pathname === path;
 
   return (
-    <footer className="bottom-0 w-full sticky flex flex-col items-center gap-2 md:hidden ">
+    <footer className="bottom-0 w-full sticky flex flex-col items-center md:hidden ">
       <section className="flex items-center gap-2 bg-white drop-shadow-lg w-full justify-between px-5">
         <Link
           to={ROUTE_IDS.aboutUs}
@@ -62,7 +62,7 @@ export const Footer = () => {
             Partners
           </p>
         </Link>
-        <Link
+        {/*  <Link
           to={ROUTES.partners}
           className="p-2 flex items-center flex-col gap-1"
         >
@@ -72,7 +72,7 @@ export const Footer = () => {
             <BsPersonPlus size={25} />
           )}
           <p className="text-xs text-center">Add Business</p>
-        </Link>
+        </Link> */}
         <Link
           to={ROUTE_IDS.contact}
           className="p-2 flex items-center flex-col gap-1"

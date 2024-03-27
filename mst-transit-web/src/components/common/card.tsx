@@ -27,7 +27,7 @@ export const Card: FC<CardProps> = ({
   return (
     <section className="flex flex-col gap-3 w-full lg:h-96 bg-white drop-shadow-lg rounded-xl hover:translate-y-2 hover:ease-in-out">
       <h1
-        className={`font-extrabold text-white justify-center flex gap-2 items-center bg-${color} rounded-t-xl p-6`}
+        className={`font-extrabold text-white justify-center flex gap-2 items-center ${color} rounded-t-xl p-6`}
       >
         <p className="text-xl font-semibold text-white">{number}</p>
         <p className="text-sm">{title}</p>

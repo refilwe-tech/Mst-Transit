@@ -76,7 +76,7 @@ export const Home = () => {
         <Heading heading="Our services" heading2="Parcel & Food Delivery" />
         <section className="grid md:grid-cols-3 gap-6 py-10 items-center w-full">
           <Card
-            color="tertiary"
+            color="bg-tertiary"
             number="#1"
             title="Embalenhle"
             parcels="35"
@@ -85,7 +85,7 @@ export const Home = () => {
             afterHours
           />
           <Card
-            color="quaternary"
+            color="bg-quaternary"
             number="#2"
             title="Secunda / Evander"
             parcels="70"
@@ -93,7 +93,7 @@ export const Home = () => {
             groceries="150"
           />
           <Card
-            color="tertiaryDark"
+            color="bg-tertiaryDark"
             number="#3"
             title="Osizweni / Brendan Village / New Estate"
             parcels="60"
@@ -103,7 +103,7 @@ export const Home = () => {
         </section>
       </section>
 
-      <section id="contact" className="flex flex-col gap-4">
+      <section id="contact-us" className="flex flex-col gap-4">
         <Heading heading="Contact us" heading2="Get in touch with us" />
         <section className="flex flex-col gap-4 items-center">
           <section className="flex flex-col gap-4 items-center">
@@ -119,7 +119,10 @@ export const Home = () => {
             <button className="drop-shadow-lg bg-white rounded-full p-2">
               <FaWhatsapp size={40} />
             </button>
-            <button className="drop-shadow-lg bg-white rounded-full p-2">
+            <button
+              onClick={() => window.open(CONTACTS.facebook, "_blank")}
+              className="drop-shadow-lg bg-white rounded-full p-2"
+            >
               <FaMeta size={40} />
             </button>
           </section>
