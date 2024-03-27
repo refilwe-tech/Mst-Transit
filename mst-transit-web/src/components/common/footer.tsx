@@ -8,8 +8,8 @@ import {
   MdOutlineAddBusiness,
   MdOutlineDeliveryDining,
 } from "react-icons/md";
-import { BsPersonPlusFill, BsPersonPlus } from "react-icons/bs";
-import { ROUTES, ROUTE_IDS } from "../../contants";
+//import { BsPersonPlusFill, BsPersonPlus } from "react-icons/bs";
+import { /* ROUTES, */ ROUTE_IDS } from "../../contants";
 import { Link, useLocation } from "react-router-dom";
 export const Footer = () => {
   const { pathname, hash } = useLocation();
