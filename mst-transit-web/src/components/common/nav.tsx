@@ -23,12 +23,12 @@ export const Nav = () => {
         <Link className={`${active("#services")}`} to="#services">
           Services
         </Link>
-        <Link className={`${active("#businesses")}`} to="#businesses">
+        {/* <Link className={`${active("#businesses")}`} to="#businesses">
           Businesses
         </Link>
         <Link className={`${active("/partner")}`} to="/partner">
           Partner with us
-        </Link>
+        </Link> */}
         <Link className={`${active("#contact")}`} to="#contact">
           Contact us
         </Link>

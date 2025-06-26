@@ -1,5 +1,5 @@
 export const CONTACTS = {
-  whatsapp: "https://wa.link/a4uw6b",
+  whatsapp: "https://wa.link/c98ucy",
   facebook: "https://www.facebook.com/profile.php?id=100081186351333",
 };
 
